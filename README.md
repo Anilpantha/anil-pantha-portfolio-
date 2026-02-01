@@ -1,41 +1,57 @@
-import { Toaster } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
-import ErrorBoundary from "./components/ErrorBoundary";
-import { ThemeProvider } from "./contexts/ThemeContext";
-import Home from "./pages/Home";
+# Barista Portfolio Website
 
+Professional barista portfolio website used to showcase skills, experience, and services online.
 
-function Router() {
-  return (
-    <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
-      <Route component={NotFound} />
-    </Switch>
-  );
-}
+## About Project
+This website works as a personal portfolio for a professional barista. It helps customers and employers understand your experience, services, and work quality.
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
+## Main Features
+Clean modern design  
+Mobile friendly layout  
+Fast loading website  
+Portfolio and service showcase  
+Easy navigation  
+Ready for online deployment  
 
-function App() {
-  return (
-    <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-      >
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-        </TooltipProvider>
-      </ThemeProvider>
-    </ErrorBoundary>
-  );
-}
+## Technology Used
+React  
+Vite  
+Tailwind CSS  
+TypeScript  
+Modern UI components  
+Client side routing  
 
-export default App;
+## Run Project Locally
+Step 1. Download or clone the project.  
+Step 2. Install dependencies using command below.
+
+pnpm install
+
+Step 3. Start development server.
+
+pnpm dev
+
+Step 4. Open browser and visit the local server link.
+
+## Build Project For Deployment
+Create production files using command below.
+
+pnpm build
+
+## Deploy On GitHub Pages
+1. Upload project to your GitHub repository.  
+2. Open repository Settings.  
+3. Enable GitHub Pages.  
+4. Select deployment branch.  
+5. Save and publish.  
+
+## Project Structure
+client folder contains public files and source code.  
+components folder stores UI components.  
+pages folder contains website pages.  
+server folder handles backend support if used.  
+
+## Author
+Anil Pantha
+
+Professional Barista Portfolio Website
